@@ -6,6 +6,14 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
+async function initDB(){
+    try{
+        await sql
+    }catch(error){
+            
+    }
+}
+
  app.get("/",(req,res)=>{
         res.send("it is working");
     });
